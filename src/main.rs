@@ -1,4 +1,5 @@
 use actix_web::{get, post, web, App, HttpResponse, HttpServer, Responder};
+use sea_orm::{Database, DatabaseConnection};
 
 #[get("/")]
 async fn hello() -> impl Responder {
